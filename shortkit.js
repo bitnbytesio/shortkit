@@ -1,5 +1,8 @@
 'use strict';
 
+if ("undefined" === typeof jQuery)
+    throw new Error("Shortkit.js requires jQuery to work");
+    
 (function ($, window, document, undefined) {
 
 var virtual_key_codes = {
